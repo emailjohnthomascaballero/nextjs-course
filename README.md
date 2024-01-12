@@ -13,13 +13,8 @@
   <ol type="I">
     <li><a href="#about">About the Project</a></li>
     <li><a href="#languages">Languages & Tools Used</a></li>
-    <li><a href="#developers">Developers</a></li>
     <li><a href="#project-link">Project Link</a></li>
-    <li><a href="#project-style">Project Style</a></li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#pages">Pages</a></li>
-    <li><a href="#steps">Steps on Deploying Using Vercel</a></li>
-    <li><a href="#creative">Creative Planning</a></li>
   </ol>
 </details>
 
@@ -34,9 +29,9 @@ In this Next.js Course Journey, my goal is straightforward: to create a real pro
 <h2 id="languages">II. Languages and Tools Used</h2>
 
 #### Planning
-<img src="https://img.shields.io/badge/git%20-%23F05032.svg?&style=for-the-badge&logo=git&logoColor=white"/> 
-<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
-</br>
+![Static Badge](https://img.shields.io/badge/GIT-orange?style=for-the-badge&logo=git&logoColor=white)
+![Static Badge](https://img.shields.io/badge/GITHUB-black?style=for-the-badge&logo=gitHUB&logoColor=white)
+
 
 #### Development
 ![Visual Studio Code](https://img.shields.io/badge/Visual_Studio_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
@@ -59,45 +54,14 @@ In this Next.js Course Journey, my goal is straightforward: to create a real pro
 <!-- Back to Top -->
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<h2 id="developers">III. Developers</h2>
-<a href="https://github.com/emailjohnthomascaballero"><img src="https://img.shields.io/badge/johnthomascaballero-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"></a>
-
-<!-- Back to Top -->
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<h2 id="project-link">IV. Project Link</h2>
+<h2 id="project-link">III. Project Link</h2>
 
 (soon)
 
 <!-- Back to Top -->
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<h2 id="project-style">V. Project Style</h2>
-Color Scheme
-
-<a href=""><img src="https://img.shields.io/badge/Primary%20Color-%23soon-222629"></a> 
-<a href=""><img src="https://img.shields.io/badge/Secondary%20Color-%23none-86C232"></a>
-
-<a href=""><img src="https://img.shields.io/badge/Color%201-%23none-767A7C"></a>
-<a href=""><img src="https://img.shields.io/badge/Color%202-%23none-1B1F22"></a>
-<a href=""><img src="https://img.shields.io/badge/Color%203-%23none-999EA0"></a>
-
-Logo
-
-<img src="./" style="background-color: white; padding: 2rem;"></br>
-
-Favicon
-
-<img src="./" style="background-color: white; padding: 2rem;"></br>
-
-Typography
-
-**Soon**
-
-<!-- Back to Top -->
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<h2 id="usage">VI. Usage</h2>
+<h2 id="usage">IV. Usage</h2>
 
 _Below is an example of how you can install and setup the application on your device._
 
@@ -113,35 +77,6 @@ _Below is an example of how you can install and setup the application on your de
    ```sh
    npm run dev
    ``` -->
-   
-<!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
-
-<!-- <h2 id="pages">VII. Pages</h2> -->
-
-<!-- <a href="https://soon.vercel.app/">Homepage</a>
-- <a href="#">News</a>
-- <a href="https://soon.vercel.app/blogs">Blog</a>
-- <a href="https://soon/contact">Contact Us</a> -->
-
-<!-- Back to Top -->
-<!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
-
-<!-- <h2 id="steps">VIII. Steps on Deploying Using Vercel</h2>
-  Step 1: Login Your Github
-  
-  <img src="./public/presentation/step-1.png" class="steps"> </br>
-
-  Step 2: Add New Project
-
-  <img src="./public/presentation/step-2.png" class="steps"> </br>
-
-  Step 3: Import Your Project
-
-  <img src="./public/presentation/step-3.png" class="steps">
-  
-  Step 4: Deploy Your Project
-
-  <img src="./public/presentation/step-4.png" class="steps">  -->
 
 <!-- Back to Top -->
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
