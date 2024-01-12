@@ -3,7 +3,7 @@
 
 <p align="center">
   <a href="https://github.com/emailjohnthomascaballero">
-    <img src="./" width="100%">
+    <img src="./nextjs-banner.png" width="100%">
   </a>
 </p>
 
