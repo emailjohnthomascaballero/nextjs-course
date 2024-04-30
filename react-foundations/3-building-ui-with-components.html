@@ -1,0 +1,82 @@
+<!-- Chapter 5: Building UI with Components -->
+
+<!-- A component is a function that returns UI elements. Inside the return statement of the function, you can write JSX: -->
+
+<!-- <html>
+  <body>
+    <div id="app"></div>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+      const app = document.getElementById("app")
+
+      function header() {
+         return (<h1>Develop. Preview. Ship.</h1>)
+       }
+
+      const root = ReactDOM.createRoot(app);
+      root.render(<h1>Develop. Preview. Ship.</h1>);
+    </script>
+  </body>
+</html> -->
+
+<!-- To render this component to the DOM, pass it as the first argument in the root.render() method: -->
+
+<!-- <html>
+  <body>
+    <div id="app"></div>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+      const app = document.getElementById("app")
+
+      function header() {
+         return (<h1>This is from header component</h1>)
+       }
+
+      const root = ReactDOM.createRoot(app);
+      root.render(header());
+    </script>
+  </body>
+</html> -->
+
+<!-- First, React components should be capitalized to distinguish them from plain HTML and JavaScript and Second, you use React components the same way you'd use regular HTML tags, with angle brackets <>: -->
+
+<!-- Nesting components
+Applications usually include more content than a single component. You can nest React components inside each other like you would regular HTML elements. -->
+
+<html>
+  <body>
+    <div id="app"></div>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+      function Header() {
+        return <h1>This is from header component</h1>;
+      }
+
+      function HomePage() {
+        return (
+          <div>
+            <Header />
+          </div>
+        );
+      }
+
+      const root = ReactDOM.createRoot(app);
+      root.render(<HomePage />);
+    </script>
+  </body>
+</html>
+
+<!-- For example, your top-level HomePage component could hold a Header, an Article, and a Footer Component. And each of those components could in turn have their own child components and so on. For example, the Header component could contain a Logo, Title and Navigation component. -->
+
+<!-- In your project, since <HomePage> is now your top-level component, you can pass it to the root.render() method -->
+
+<!-- FIXME: if not working in live server, open directly to your browser instead. -->
