@@ -1,0 +1,168 @@
+<!-- Chapter 6: Displaying Data with Props -->
+
+<!-- So far, if you were to reuse your <Header /> component, it would display the same content both times. -->
+
+<!-- <html>
+  <body>
+    <div id="app"></div>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+      function Header() {
+        return <h1>This is Header Component</h1>;
+      }
+
+      function HomePage() {
+        return (
+          <div>
+            <Header />
+            <Header />
+          </div>
+        );
+      }
+
+      const root = ReactDOM.createRoot(app);
+      root.render(<HomePage />);
+    </script>
+  </body>
+</html> -->
+
+<!-- Using props -->
+
+<!-- What is Props? you can pass pieces of information as properties to React components. These are called props. -->
+
+<!-- If you console.log() props, you can see that it's an object with a title property. -->
+
+<!-- <html>
+  <body>
+    <div id="app"></div>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+      function Header(props) {
+        console.log(props); // { title: "React" }
+        return <h1>This is Header Component</h1>;
+      }
+
+      function HomePage() {
+        return (
+          <div>
+            <Header title="React" />
+          </div>
+        );
+      }
+
+      const root = ReactDOM.createRoot(app);
+      root.render(<HomePage />);
+    </script>
+  </body>
+</html> -->
+
+<!-- Since props is an object, you can use object destructuring to explicitly name the values of props inside your function parameters: -->
+
+<!-- Using variables in JSX: To use the title prop, add curly braces {}. -->
+
+<!-- You can use other alternatives:
+function Header({ title }) {
+  console.log(title);
+  return <h1>{title}</h1>;
+}
+
+function Header(props) {
+  return <h1>{props.title}</h1>;
+}
+
+function Header({ title }) {
+  return <h1>{`Cool ${title}`}</h1>;
+} -->
+
+<!-- <html>
+  <body>
+    <div id="app"></div>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+      function Header({title, description}) {
+        console.log(title + " " + description); // "React"
+        return <h1>{`title: ${title} description: ${description}`}</h1>;
+      }
+
+      function HomePage() {
+        return (
+          <div>
+            <Header title="React" description="blah blah blah" />
+          </div>
+        );
+      }
+
+      const root = ReactDOM.createRoot(app);
+      root.render(<HomePage />);
+    </script>
+  </body>
+</html> -->
+
+<!-- Add default title -->
+<!-- The returned value of a function: -->
+<!-- <html>
+  <body>
+    <div id="app"></div>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+      function createTitle(title) {
+        return title ? title : "Default Title"; //if title doesnt exist, return 'Default Title'
+      }
+
+      function Header({ title }) {
+        return <h1>{createTitle(title)}</h1>;
+      }
+
+      function HomePage() {
+        return (
+          <div>
+            <Header title="Header title" />
+            <Header title="New title" />
+          </div>
+        );
+      }
+
+      const root = ReactDOM.createRoot(app);
+      root.render(<HomePage />);
+    </script>
+  </body>
+</html> -->
+
+<!-- Iterating through lists by using map() -->
+<html>
+  <body>
+    <div id="app"></div>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+
+      function HomePage() {
+        const names = ["John", "Jane", "Joe"];
+        return (
+          <div>
+            <ul>
+              {names.map(name => <ul key={name}>{name}</ul>)}  
+            </ul>
+          </div>
+        );
+      }
+
+      const root = ReactDOM.createRoot(app);
+      root.render(<HomePage />);
+    </script>
+  </body>
+</html>
