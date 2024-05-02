@@ -1,0 +1,75 @@
+<!-- Chapter 7: Adding Interactivity with State -->
+
+<!-- In React, event names are camelCased. The onClick event is one of many possible events you can use to respond to user interaction. For example, you can use onChange for input fields or onSubmit for forms. -->
+
+<!-- Handling events
+You can define a function to "handle" events whenever they are triggered. Create a function before the return statement called handleClick(): -->
+
+<!-- <html>
+  <body>
+    <div id="app"></div>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+      function HomePage() {
+        function handleClick() {
+          console.log("button clicked");
+        }
+
+        return (
+          <div>
+            <button onClick={handleClick}>Like</button>
+          </div>
+        );
+      }
+
+      const root = ReactDOM.createRoot(app);
+      root.render(<HomePage />);
+    </script>
+  </body>
+</html> -->
+
+<!-- State and hooks -->
+
+<!-- State and hooks: add additional logic such as state to your components -->
+
+<html>
+  <body>
+    <div id="app"></div>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+      function HomePage() {
+        // The second item in the array is a function to update the value.
+        const [likes, setLikes] = React.useState(0);
+
+        function handleClick() {
+          // you can call your state updater function, setLikes
+          setLikes(likes + 1);
+        }
+
+        return (
+          <div>
+            <button
+              onClick={handleClick}
+              style={{ backgroundColor: "black", color: "white" }}
+            >
+              Like {likes}
+            </button>
+          </div>
+        );
+      }
+
+      const root = ReactDOM.createRoot(app);
+      root.render(<HomePage />);
+    </script>
+  </body>
+</html>
+
+<!-- What is the difference between props and state?
+
+Props are read-only information that's passed to components. State is information that can change over time, usually triggered by user interaction. -->
