@@ -1,5 +1,9 @@
 # Run This Project:
-3. Run dev
+1. Install NPM packages
+   ```sh
+   npm install
+   ```
+2. Run dev
    ```sh
    npm run dev
    ```
